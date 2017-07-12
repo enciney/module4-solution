@@ -1,0 +1,23 @@
+<table class = "table table-bordered">
+  <thead class="thead-inverse">
+    <tr>
+
+
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+  <th>PRICE_SMALL</th>
+  <th>PRICE_LARGE</th>
+    </tr>
+  </thead>
+<tbody>
+
+
+  <tr ng-repeat = "item in $ctrl.allItems">
+    <td>{{item.name}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.price_small}}$</td>
+    <td>{{item.price_large}}$</td>
+    <!-- TODO if any element of the item  is null  use a ng_if and  print dash(-)  -->
+  </tr>
+</tbody>
+</table>

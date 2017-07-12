@@ -1,0 +1,9 @@
+<table class = "table table-bordered">
+  <th>Categories</th>
+  <tr ng-repeat = "item in $ctrl.allCategories"  ui-sref = "itemList({shortName:item.short_name})">
+    <td>{{item.name}}</td>
+
+  </tr>
+
+
+</table>
